@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>YASH SHRIVASTAV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Aditya Karwani</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Education</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+	  
+	  <section id="home-section" class="hero">
+    <div class="home-slider  owl-carousel">
+        <div class="slider-item">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+                    <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bggggg.png); background-position: right;">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                        <div class="text">
+                            <span class="subheading">Hello!</span>
+                            <h1 class="mb-4 mt-3">I'm <span>ADITYA KARWANI</span></h1>
+
+                            <!-- Element to contain animated typing -->
+                            <span id="typing-animation"></span>
+
+                            <script>
+
+                            // Initialize the typing animation
+                            const typingAnimationElement = document.getElementById('typing-animation');
+
+                            // Create an array of typing text
+                            const typingTexts = [
+                            'Data Science  ',
+                            'Machine Learning  ',
+                            'Artificial Intelligence  ',
+                            ];
+
+                            // Create a function to display the typing animation for a given text
+                            function playTypingAnimation(text) {
+                            // Loop through each character and add it to the element
+                            for (let i = 0; i < text.length; i++) {
+                                setTimeout(() => {
+                                typingAnimationElement.textContent += text[i];
+                                }, i * 200); // Increase the delay to slow down the typing animation
+                            }
+
+                            // Once the animation is complete, reset the text and start over
+                            setTimeout(() => {
+                                typingAnimationElement.textContent = '';
+                                playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                            }, text.length * 200);
+                            }
+
+                            // Start the typing animation loop
+                            playTypingAnimation(typingTexts[0]);
+
+                            </script>
+
+                            <br>
+                            <br>
+                            <h2>A Btech Fourth Year Student</h2>
+                            <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+                            <!-- <br> -->
+                            <p>
+                               
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/aaaaaaaaaaaaaaaaaaaaaaa.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Aditya Karwani</span></p>
+										<p><span class="title-s">Currently: </span> <span>Btech fourth year</span></p>
+										<p><span class="title-s">Experience: </span> <span>Fresher</span></p>
+										<p><span class="title-s">Address: </span> <span>Delhi, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s pt-4"><b>Skills</b></p>
+									<span>SQL</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>R</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Data Science</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Power BI</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Mathematics</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Deep Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Hi, I'm Aditya Karwani, a fourth-year BTech student specializing in Artificial Intelligence
+									and Data Science . My passion lies in exploring the realms of Data Science, Machine
+									Learning, AI, and Deep Learning.  A motivated and hardworking candidate with strong interpersonal and analytical skills, seeking to gain corporate knowledge and
+									experience. Skilled in data analytics, machine learning, and deep learning, with a passion for using advanced technologies to drive
+									innovation.
+									.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics Enthusiast</span></li>
+									<li class="d-flex"><span>Education:</span> <span>B.TECH (Artificial Intelligence And Data Science)</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>CODING LANGUAGES:</span> <span>HTML,CSS,R,C++,Power BI,SQL,Python(Numpy, Pandas,
+										Matplotlib, scikit-learn,
+										tensorflow, flask)</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Mathematics(probability,statistics,linear algebra and calculus), Machine Learning, Deep Learning(ANN,CNN,RNN),Data Visualization</span></li>
+									
+									
+								</ul>
+							</div>
+						</div>
+
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	
+
+		
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2025</span>
+    					<h2>B.TECH IN ARTIFICIAL INTELLIGENCE AND DATA SCIENCE</h2>
+    					<span class="position">VIVEKANANDA INSTITUTE OF PROFESSIONAL STUDIES</span>
+    					<p class="mt-4">Grade: 8.818 CGPA</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2021</span>
+    					<h2>CBSE CLASS 12TH</h2>
+    					<span class="position">Ryan International School</span>
+    					
+    				</div>
+				</div>
+    		</div>
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2018-2019</span>
+					<h2>CBSE CLASS 10TH</h2>
+					<span class="position">Ryan International School</span>
+					
+				</div>
+			</div>
+		</div>
+
+
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/adityakarwani/Sentiment-Analysis-using-RNN" class="block-20 zoom-effect" style="background-image: url('1704794248502.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/adityakarwani/Sentiment-Analysis-using-RNN">Sentiment Analysis with RNN</a></h3>
+                <p>Achieved high performance in classifying sentiments from text data.Designed and trained an RNN model using LSTM units to capture sequential dependencies in text data. Applied dropout layers
+					to prevent overfitting and enhance generalization.Developed a sentiment analysis tool capable of accurately classifying sentiments expressed in text, enabling applications in
+					customer feedback analysis and social media sentiment tracking.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/adityakarwani/Face-Mask-Detection-using-Deep-Learning" class="block-20 zoom-effect" style="background-image: url('face-mask-detection1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/adityakarwani/Face-Mask-Detection-using-Deep-Learning">Face Mask Detection with CNN</a></h3>
+                <p>Achieved high accuracy in distinguishing between masked and unmasked faces using live video streams.– Implemented CNN architecture with transfer learning from VGG model. Integrated the model with live video streams to
+					continuously detect faces and classify them as masked or unmasked. Successfully created a robust system capable of accurately detecting face masks in real-time, contributing to public health efforts
+					during the COVID-19 pandemic.</p>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/adityakarwani/Diamond-Price-Prediction" class="block-20 zoom-effect" style="background-image: url('OIP.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/adityakarwani/Diamond-Price-Prediction">Diamond-Price-Prediction</a></h3>
+                <p>Developed a predictive model to estimate diamond prices using various machine learning algorithms, including Decision Trees, Linear Regression, XGBRegressor, and KNN Regressor. The project involved extensive data preprocessing, feature engineering, and model evaluation. Achieved notable accuracy improvements through hyperparameter tuning and model selection, demonstrating proficiency in data science and predictive analytics.</p>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/adityakarwani/Fake-News-Detection" class="block-20 zoom-effect" style="background-image: url('OIP (1).jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/adityakarwani/Fake-News-Detection">Fake-News-Detection</a></h3>
+			  <p>Implemented a machine learning-based system to classify news articles as real or fake using Natural Language Processing (NLP) techniques. Employed models such as Logistic Regression, Random Forest, and Support Vector Machines (SVM), and performed feature extraction using TF-IDF and word embeddings. The project highlighted my skills in text classification, feature engineering, and model evaluation.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/adityakarwani/Face-Emotion-Recognition-using-Deep-Learning" class="block-20 zoom-effect" style="background-image: url('OIP (2).jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/adityakarwani/Face-Emotion-Recognition-using-Deep-Learning">Face-Emotion-Recognition-using-Deep-Learning </a></h3>
+			  <p>Developed a deep learning model to identify and classify facial expressions into emotions such as happiness, sadness, and anger. Utilized Convolutional Neural Networks (CNNs) and transfer learning with pre-trained models to enhance accuracy and efficiency. Integrated the model into a user-friendly application for real-time emotion detection, showcasing expertise in computer vision and neural network architectures.</p>
+			</div>
+		  </div>
+		</div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/adityakarwani/CIFAR---10-Objects-Recognition" class="block-20 zoom-effect" style="background-image: url('CIFAR-10_examples.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/adityakarwani/CIFAR---10-Objects-Recognition">CIFAR 10-Objects-Recognition</a></h3>
+                <p>Developed a classification model to identify and categorize images into one of ten classes from the CIFAR-10 dataset. Applied Convolutional Neural Networks (CNNs) to achieve high accuracy in object recognition. Implemented data augmentation techniques and fine-tuned hyperparameters to enhance model performance and robustness.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<!-- <div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
+				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div> -->
+	  </div>
+    </section>
+
+	<div class="row justify-content-center mt-5">
+		<div class="col-md-6 text-center ftco-animate">
+			<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+		</div>
+	</div>
+</div>
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+		<div class="row d-flex contact-info mb-5">
+			<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-map-signs"></span>
+					</div>
+					<h3 class="mb-4">Address</h3>
+					<p>Delhi, India</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-phone2"></span>
+					</div>
+					<h3 class="mb-4">Contact Number</h3>
+					<p><a href="tel://0101010101">+91 9821726178</a></p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-paper-plane"></span>
+					</div>
+					<h3 class="mb-4">Email Address</h3>
+					<p><a href="mailto:info@yoursite.com">adityakarwani22465@gmail.com</a></p>
+				</div>
+			</div>
+		</div>
+		
+          <!-- <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div> -->
+
+		  
+			
+ </section>
+
+
+ 
+	
+   
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
